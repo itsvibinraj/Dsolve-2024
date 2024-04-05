@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet"
+          type="text/css" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
         .toplayer
-        {
+        {padding: 10px 20px;
+    margin: 10px;
             background-color: rgba(255,198,111,255);
+            height: 100px;
         }
     .about{
         height: 10px;
         width: 100px;
         display:inline-block;
          margin-right: 200px;
-        
+        border-color: black;
         color: black;
         
     }
@@ -53,16 +57,37 @@ color: black;
         position:absolute;
         top:8px;
         right:16px;
-     
+        text-align: right;
+        font-weight: bold;
+
     }
     .image{
         display:block;
-        max-width: 100%;
-
+        margin-top: 20px;
     }
     .bottomlayer
-    {   
-        display: block;
+    {   padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #e79805;
+    color: #fff;
+    border-color: #351a05;
+    border-radius: 5px;
+    cursor: pointer;
+        display: flex;
+        justify-content: center;
+
+    }
+    .bottomlayer button {
+        padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #e79805;
+    color: #fff;
+    border-color: #5d2901;
+    border-radius: 5px;
+    cursor: pointer;margin:0 10px;
+    height: 100px;
     }
     .books.fontofbooks
     {
@@ -70,31 +95,61 @@ color: black;
         font-family:obliqe;
     }
 .books,.uniforms,.other
-{ height: 33.3%;
-        width: 33.3%;
+{ 
  display: inline-block;
-}    </style>
+} 
+.calc{margin-top:1px;
+    font-size: 30px;
+    margin-bottom: 9px;
+} 
+.othtext
+{
+    margin-top: 1px;
+}  </style>
 </head></style>
     
 <body>
     <div class="toplayer">
     <div class="topcolumn">
-       <div class="about"><button href="C:\Users\mehra\Dsolve-2024\adout.html"><p class="abouttext"><b>about us &#128712;</b></p></button></div>
+       <div class="about"><button><a href="C:\Users\mehra\Dsolve-2024\adout.html" ><b>about us &#128712;</b></a></button></div>
       <div class="se" >
-       <input class="search-bar" type="text" placeholder="make a search" size="100px" >
-       <button><p class="sergoogle">&#128269;</p></button>
+        
+            
+          </div>
+       
             </div>
             
         <div class="menubutton">
-            <button><p class="menuicon">&equiv;</p></button>
-            </div></div>
+           <button class="menuicon"><a href="C:\Users\mehra\Dsolve-2024\menu.html">&equiv;</a></button>
+            
    <div class="image">
     <img src="C:\Users\mehra\Dsolve-2024\WhatsApp Image 2024-04-05 at 1.32.18 PM.jpeg">
    </div>
    <div class="bottomlayer">
-      <div class="books"><button><p class="fontofbook">books</p></button></div>
-      <div class="uniforms"><button><p>uniforms</p></button></div>
-      <div class="other"><button><p>others</p></button></div>
+      <button><p  >&#128214;</p><a href="C:\Users\mehra\Dsolve-2024\classbutton.html">books</a></button>
+      <button><p  >&#x1F454;</p>uniforms</button>
+      <button><p class="calc" >&#x1F5A9;</p><p class="othtext">others</p></button>
+ 
    </div>
+   <div class="container">
+    <input id="searchbar"
+           onkeyup="search_animal()"
+           type="text" name="search"
+           placeholder="make a Search..">
+           <button><p class="sergoogle">&#128269;</p></button>
+
+    <ul id='list'>
+        <li class="animals">books</li>
+        <li class="animals">lab coats</li>
+        <li class="animals">chemistry</li>
+        <li class="animals">physics</li>
+        <li class="animals">engneering graphics</li>
+        <li class="animals">maths</li>
+        <li class="animals">workshop uniforms</li>
+        <li class="animals">life skills</li>
+    </ul>
+</div>
+
+<script src="./script.js"></script>
    
 </html>
