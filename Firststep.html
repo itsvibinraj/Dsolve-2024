@@ -7,33 +7,54 @@
     <style>
     .about{
         display:inline-block;
-margin-right: 150px;
+margin-right: 310px;
 
     }
-    .class2
+    
+        
+   .class2
     {
+       
      display:inline-block;
 
+    }
+    .button
+    {
+        display:inline-block;
+    }
+    .topcolumn
+    {
+
+    }
+    .menubutton
+    {
+        display:inline-block;
+        position:absolute;
+        top:8px;
+        right:16px;
+     
     }
     </style>
 </head></style>
     
 <body>
-    <div>
+    <div class="topcolumn">
        <div class="about"><a href=""><p>about us &#128712;</p></a></div>
-        <input  class="class2" title="Type Subject, product name, publication etc..." placeholder="make a search.."text" maxlength="100" class="search-bar-text searchinput search listing_srchhere" id="small-searchterms" autocomplete="off" name="q" onkeypress="if (event.keyCode == 13) { getsearchresultList(event);}">
-        <ul id="output" class="instantSearch" style="display: none; z-index: 9999; max-width: 600px; width: 100%;">
-        </ul>
-        <div onclick="getsearchresultList(event)" title="Search" class="button seearchead">
-            <span>
-                <span class="fa fa-search"></span></span>
+      <input  class="class2" title="Type Subject, product name, publication etc..." placeholder="make a search.."text" maxlength="100" class="search-bar-text searchinput search listing_srchhere" id="small-searchterms" autocomplete="off" name="q" onkeypress="if (event.keyCode == 13) { getsearchresultList(event);}">
+            <ul id="output" class="instantSearch" style="display: none; z-index: 9999; max-width: 600px; width: 100%;">
+            </ul>
+            <div onclick="getsearchresultList(event)" title="Search" class="button seearchead">
+                <span>
+                    <span class="fa fa-search"></span></span>
+            </div>
+        <div class="button">
+            <buttom >&#128269;</buttom>
         </div>
-        <div>
-            <buttom>&#128269;</buttom>
+        <div class="menubutton">
+            <p>&equiv;</p>
         </div>
     </div>
-    <div class="nav-links">
-        
+    
 
     </div>
     
