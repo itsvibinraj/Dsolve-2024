@@ -4,15 +4,15 @@
 
 
 ## Team Name
-Name  
+Gemini^2 
 
 # Team Member
-Member 1 Github Link
+https://github.com/itsvibinraj
 
-MEmber 2 Github Link
+https://github.com/Mehraayisha
 
 ## Idea
-Breif Idea in two three sentences 
+Website for students and staff within a college to buy and sell study materials between themselves.
 
 ## Features 
 1. 
