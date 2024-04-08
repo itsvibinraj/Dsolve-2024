@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .popup{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            border-radius: 5px;
+            box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid #333;
+            padding: 5px 2px;
+            padding-left: 9px;
+            padding-right: 9px;
+            /* z-index: 1000; */
+        }
+        .popup-content{
+            text-align: center;
+        }
+        .close{
+            position: absolute;
+            top:0;
+            right:0;
+            cursor: pointer;
+        }
+        .popup {
+  display: none; /* Hide the popup initially */
+}
+
+    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p>You are logged in successfully!</p>
+        </div>
+      </div>
+
+<h2><b>Login</b></h2>
+<h3>login to sell your products</h3>
+<form id="loginForm">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <button type="submit">Login</button>
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script src="firebase-config.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>

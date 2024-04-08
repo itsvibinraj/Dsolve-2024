@@ -8,8 +8,10 @@ Gemini^2
 
 # Team Member
 https://github.com/itsvibinraj
+Vibin RAj
 
 https://github.com/Mehraayisha
+Mehra Ayisha
 
 ## Idea
 Website for students and staff within a college to buy and sell study materials between themselves.
